@@ -1,13 +1,221 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    font-family: 'Roboto', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* 
+div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     margin-top: -30px; 
+
+} */
+
+/* 
+#heading{
+    position: absolute;
+    margin-top: -60px;
+} */
+
+/*
+
+h1{
+    padding: 20px 20px;
+    background-color: bisque;
+    color:rgb(101, 20, 250);
+    border-radius: 20px;
+
+}
+
+span{
+    color:darkcyan;
+}
+
+
+.head{
+    background-color: red;
+}
+
+.imgDiv img{
+    margin: 20px 93px;
+} */
+
+
+
+/* .btn{
+    padding: 14px;
+    font-size: 25px;
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: bo;
+    border-radius: 20px;
+
+    margin: 20px ;
+}
+
+
+input{
+    width: 600px;
+    padding: 20px 40px;
+    font-size: 20px;
+} */
+
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centerDiv{
+    width: 25%;
+    height: 80vh;
+    background-color: #f4f4f4;
+    /* box-shadow: 5px 10px 25px -5px rgba(224, 172, 59, 0.5); */
+    border-radius: 20px;
+    
+
+}
+
+h1{
+    color: white;
+    background: transparent;
+    background: black;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0 , 0 , 0, 0.3);
+}
+
+input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    width: 60%;
+    border-bottom: 2px solid red;
+    /* border: 2px solid red;
+    border-radius: 20px; */
+    outline: none;
+
+}
+
+button{
+    min-height:40px;
+    /* width: 45px; */
+    border-radius: 50%;
+    width: 35px;
+    height: 25px;
+    border-color: transparent;
+    background-color: rgb(59, 181, 252);
+    color: white;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    margin: 50px 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+
+.incBtn:hover{
+    background-color: yellow;
+}
+
+
+
+button:hover{
+    background-color: rgb(211, 211, 197);
+    color: black;
+}
+
+ol{
+    margin-top : 30px;
+}
+
+ol li{
+    padding-left: 0px;
+    /* margin: 0 10px; */
+    /* position: absolute; */
+    /* left: 650px; */
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    
+    color: #8566aa;
+    text-transform: capitalize;
+}
+
+
+.todoStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoStyle .fa-times{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 224, 102);
+    border-radius: 50%;
+    /* margin: 0 15px 0 35px; */
+    /* margin-left: -200px; */
+    /* position: absolute; */
+    /* left: 600px; */
+    color:black;
+    box-shadow: 5px 5px 15px -5px darkgray;
+}
+
+
+.todoStyle .fa-times:hover{
+    background-color: darkorange;
+}
+
+
+/* 
+responsive style */
+
+
+@media (max-width: 768px) {
+
+    .centerDiv{
+        width: 55%;
+    }
+
+    .todoStyle .fa-times{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+    
 }
